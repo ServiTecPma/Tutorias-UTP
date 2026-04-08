@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de tutoría | Academia Base</title>
+    <meta name="description" content="Formulario para solicitar tutorías privadas de cálculo, física y DLA.">
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+  <body>
+    <main class="form-page">
+      <section class="section container fade-up">
+        <div class="section-head center-text">
+          <span class="eyebrow">Solicitud</span>
+          <h1>Formulario de tutorías</h1>
+          <p>Completa tus datos y te contactaremos lo antes posible.</p>
+        </div>
+        <form id="solicitudForm" class="card form-card">
+          <div class="field-grid">
+            <div class="field">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </div>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="field">
+              <label for="nivel">Nivel académico</label>
+              <select id="nivel" name="nivel" required>
+                <option value="">Selecciona una opción</option>
+                <option value="universitario">Universitario</option>
+                <option value="secundaria">Secundaria</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="materia">Materia</label>
+              <select id="materia" name="materia" required>
+                <option value="">Selecciona una materia</option>
+                <option value="calculo-1">Cálculo 1</option>
+                <option value="calculo-2">Cálculo 2</option>
+                <option value="calculo-3">Cálculo 3</option>
+                <option value="fisica-1">Física 1</option>
+                <option value="fisica-2">Física 2</option>
+                <option value="dla">DLA</option>
+                <option value="matematicas-secundaria">Matemáticas (secundaria)</option>
+                <option value="fisica-secundaria">Física (secundaria)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="modalidad">Modalidad preferida</label>
+              <select id="modalidad" name="modalidad" required>
+                <option value="">Selecciona una opción</option>
+                <option value="virtual">Virtual</option>
+                <option value="presencial">Presencial</option>
+                <option value="por-definir">Por definir</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-grid">
+            <div class="field">
+              <label for="horario">Horario preferido</label>
+              <input type="text" id="horario" name="horario" placeholder="Ej: tardes, fines de semana, noches">
+            </div>
+            <div class="field">
+              <label for="tema">Tema o contenido</label>
+              <input type="text" id="tema" name="tema" placeholder="Ej: integrales, cinemática, pseudocódigo">
+            </div>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje adicional</label>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Cuéntanos qué necesitas reforzar o cuál es tu dificultad principal"></textarea>
+          </div>
+          <button type="submit" class="btn full-btn">Enviar solicitud</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+        <div class="center-actions">
+          <a href="/index.html" class="btn btn-secondary">Volver al inicio</a>
+        </div>
+      </section>
+    </main>
+    <script src="/assets/js/app.js" defer></script>
+  </body>
+</html>
